@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ext-boton, .contacto #boton-contacto, .main-imag-act button, .main-index .piezas .piezasdiv button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 30px;
+}
+
+nav {
+  background-color: white;
+  height: 60px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  height: 100px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0 30px;
+  width: 50%;
+}
+nav ul a {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.main-index {
+  background-color: bisque;
+}
+.main-index .TITULO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  color: black;
+  font-size: 40px;
+  height: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-index .fondo {
+  height: 800px;
+  width: 100%;
+}
+.main-index .fondo .paisaje {
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  opacity: 90%;
+}
+.main-index .fondo .hotel {
+  position: relative;
+  height: 60%;
+  top: 15%;
+  left: 10%;
+  border: 3px solid white;
+}
+.main-index .flex-beneficios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(112, 73, 73);
+  border-top: 3px solid black;
+}
+.main-index .bar { /* CON BAR HAGO REFERENCIA A LOS SERVIVIOS Q TIENE EL HOTEL (BAR, ESTACIONAMIENTO, WIFI) */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.main-index .bar .imagen-bar {
+  width: 70%;
+  height: 60%;
+  padding-left: 20%;
+  padding-top: 18%;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.main-index .bar .bar-titulo {
+  padding-top: 100px;
+}
+.main-index .piezas {
+  border-top: 2px solid black;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  height: 500px;
+}
+.main-index .piezas .piezasdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-index .piezas .piezasdiv .pieza {
+  height: 70%;
+  width: 90%;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.main-index .piezas .piezasdiv .parrafopieza {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.main-index .piezas .piezasdiv button {
+  font-size: large;
+  padding: 5px;
+}
+.main-index .piezas .piezasdiv .pieza:hover {
+  transform: scale(1.1, 1.1);
+}
+.main-index .piezas .piezasdiv button:hover {
+  cursor: pointer;
+}
+
+.main-imag-act {
+  background-image: url(../MULTIMEDIA/fondocontacto.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  border-top: 4px solid black;
+}
+.main-imag-act .titulo_actividades {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: cursive;
+  text-align: center;
+}
+.main-imag-act .activades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.main-imag-act .activades .div-actividad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: aliceblue;
+}
+.main-imag-act .activades .div-actividad .imagenactividad {
+  border: 3px solid whitesmoke;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.main-imag-act button {
+  font-size: large;
+  padding: 5px;
+}
+.main-imag-act button:hover {
+  cursor: pointer;
+}
+
+.main-ubicacion {
+  background-image: url(../MULTIMEDIA/fondocontacto.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  height: 1600px;
+  border-top: 4px solid black;
+}
+.main-ubicacion .ubicacion-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+}
+.main-ubicacion .ubicacion-titulo .ubicacion-texto {
+  font-family: cursive;
+  color: aqua;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-ubicacion .ubicacion-titulo .imagen-ubicacion {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.main-imag-act {
+  background-image: url(../MULTIMEDIA/fondocontacto.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  border-top: 4px solid black;
+}
+.main-imag-act .grid-imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 50px;
+  padding-top: 50px;
+}
+.main-imag-act .grid-imagenes .imagenes {
+  width: 500px;
+  height: 320px;
+  border: 2px solid black;
+}
+
+.main-contacto {
+  background-image: url(../MULTIMEDIA/fondocontacto.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  height: 1000px;
+  border-top: 4px solid black;
+}
+
+.contacto {
+  width: 850px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+.contacto .titulo-contacto {
+  color: white;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contacto .parrafo-contacto {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.contacto label {
+  color: white;
+  font-size: 20px;
+}
+.contacto label .area-textos {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.contacto label .area-mensaje {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: start;
+}
+.contacto label textarea {
+  width: 100%;
+  max-width: 100%;
+}
+.contacto #boton-contacto {
+  font-size: 15px;
+  font-family: monospace;
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px;
+}
+.contacto #boton-contacto:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+footer #parrafo_footer {
+  text-align: center;
+  color: azure;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  nav .logo {
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+  }
+  nav ul a {
+    font-size: 9px;
+  }
+  .main-contacto {
+    height: 800px;
+  }
+  .main-contacto .contacto {
+    width: 100%;
+  }
+  .mains {
+    background-size: 100% 100%;
+    height: auto;
+  }
+  .main-ubicacion {
+    height: 700px;
+  }
+  .main-ubicacion .ubicacionimag {
+    width: 350px;
+  }
+  .main-ubicacion .ubicacion-texto {
+    text-align: center;
+  }
+  .titulo_actividades {
+    color: aliceblue;
+    font-size: 10px;
+  }
+  .main-imag-act .activades {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .main-imag-act .activades .div-actividad {
+    margin-bottom: 20px;
+  }
+  .main-imag-act .activades .div-actividad .texto-actividades {
+    font-size: 15px;
+  }
+  .main-imag-act .activades .div-actividad .imagenactividad {
+    border: 3px solid white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .main-imag-act .grid-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-imag-act .grid-imagenes .imagenes {
+    width: 300px;
+    height: 210px;
+    border: 2px solid black;
+  }
+  button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: small;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  .main-index {
+    height: 1600px;
+  }
+  .main-index .TITULO {
+    height: 100px;
+    text-align: center;
+  }
+  .main-index .TITULO h1 {
+    font-size: 30px;
+  }
+  .main-index .fondo {
+    height: 200px;
+  }
+  .main-index .fondo .paisaje {
+    height: 200px;
+    width: 100%;
+  }
+  .main-index .fondo .hotel {
+    height: 0px;
+  }
+  .main-index .flex-beneficios {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+  }
+  .main-index .flex-beneficios .bar .imagen-bar {
+    height: 60px;
+    width: 100px;
+  }
+  .main-index .flex-beneficios .bar .bar-titulo {
+    padding-top: 25px;
+    font-size: 15px;
+    font-family: cursive;
+  }
+  .main-index .flex-beneficios .bar p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+  }
+  .main-index .piezas {
+    border-top: 0px;
+    flex-direction: column;
+    margin-top: 160px;
+  }
+  .main-index .piezas .piezasdiv .parrafopieza {
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .main-index .piezas .piezasdiv button {
+    font-size: small;
+  }
+}/*# sourceMappingURL=style.css.map */
